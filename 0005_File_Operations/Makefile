@@ -2,9 +2,9 @@ obj-m += driver.o
  
 ifdef ARCH
 	#You can update your Beaglebone path here.
-        KDIR = /home/infinite/LKI/bbb-builds/OS/linux-4.19.103/
+	KDIR = /home/embetronicx/BBG/tmp/lib/modules/5.10.65/build
 else
-        KDIR = /lib/modules/$(shell uname -r)/build
+	KDIR = /lib/modules/$(shell uname -r)/build
 endif
  
  
