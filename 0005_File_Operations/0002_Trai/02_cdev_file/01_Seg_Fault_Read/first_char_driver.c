@@ -85,7 +85,7 @@ static int __init ofcd_init(void) /* Constructor */
 	printk(KERN_INFO "<Major, Minor>: <%d, %d>\n", MAJOR(first), MINOR(first));
 
 	cdev_init(&c_dev, &driver_fops);
-	cdev_add(&c_dev, first, 1);
+	cdev_add(&c_dev, first, 1);   // 
 
 	return 0;
 }
